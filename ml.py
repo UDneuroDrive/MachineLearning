@@ -115,24 +115,24 @@ model = Sequential([
 
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.save('my_model.h5')
+# # train the network
+# print("[INFO] training network...")
+# H = model.fit_generator(
+# 	aug.flow(trainX, trainY, batch_size=BS),
+# 	validation_data=(testX, testY),
+# 	steps_per_epoch=len(trainX) // BS,
+# 	epochs=EPOCHS, verbose=1)
 
-# train the network
-print("[INFO] training network...")
-H = model.fit_generator(
-	aug.flow(trainX, trainY, batch_size=BS),
-	validation_data=(testX, testY),
-	steps_per_epoch=len(trainX) // BS,
-	epochs=EPOCHS, verbose=1)
+# test_loss, test_acc = model.evaluate(testX,  testY, verbose=2)
 
-test_loss, test_acc = model.evaluate(testX,  testY, verbose=2)
+# print('\nTest accuracy:', test_acc)
 
-print('\nTest accuracy:', test_acc)
+# prediction_single = model.predict(testX)
 
-prediction_single = model.predict(testX)
-
-for i in range(testX.shape[0]):
+# for i in range(testX.shape[0]):
     
-    print("predicted {} actual {}", np.argmax(prediction_single[i]),testY[i])
+#     print("predicted {} actual {}", np.argmax(prediction_single[i]),testY[i])
 
 
 def getPrediction(testData, index):
