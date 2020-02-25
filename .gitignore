@@ -11,6 +11,7 @@
 **.jpg
 **.csv
 **.pickle
+./.venv/*
 
 ./donkeycar/*
 # User-specific files (MonoDevelop/Xamarin Studio)
