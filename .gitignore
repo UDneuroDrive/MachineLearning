@@ -11,6 +11,8 @@
 **.jpg
 **.csv
 **.pickle
+
+./donkeycar/*
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
