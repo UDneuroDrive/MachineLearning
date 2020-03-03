@@ -8,10 +8,19 @@
 *.user
 *.userosscache
 *.sln.docstates
+<<<<<<< HEAD
 *.jpg
 *.csv
 .venv/
 *.pickle
+=======
+**.jpg
+**.csv
+**.pickle
+./.venv/*
+
+
+>>>>>>> 796360057fa595e1c1b1c1c1bde50278cb327e47
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
